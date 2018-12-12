@@ -1,0 +1,43 @@
+//html
+html {
+  --mobile-spacing: 0rem 1rem;
+  --base-spacing: 0rem 5rem;
+  --block-spacing: 1.8rem
+}
+
+$enable-flex:               true;
+$enable-grid-classes:       true;
+
+//brand
+$absa-red:     #AD4148 !default;
+$dark-grey: #504A5C;
+$text-light-grey: #989898;
+
+$brand-primary: $absa-red;
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-size: 0.99em;
+
+
+// Navbar
+$nav-background-color: transperant;
+$nav-foreground-color: #FFF;
+$nav-hover-color: rgba(255, 255, 255, 0.1);
+
+%plainlist {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+//mixins
+@mixin transition($property, $time, $type) {
+  --webkit-transition: $property $time $type;
+  --moz-transition: $property $time $type;
+  transition: $property $time $type;
+}
+
+//breakpoints
+$break-small: 320px;
+$break-medium: 820px;
+$break-large: 1200px;
