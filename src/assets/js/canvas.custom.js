@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
   btnActiveState();
+  $( "#datepicker" ).datepicker();
+  $( "#datepicker1" ).datepicker();
 });
 
 function menuRes() {

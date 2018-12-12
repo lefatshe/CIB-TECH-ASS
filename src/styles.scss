@@ -29,13 +29,15 @@ body, html {
 
 // ***********************************************************************************************************************
 // Navbar
-
+span.menu-ico {
+  margin-right: 10px;
+}
 #handleNav {
   //padding: var(--base-spacing);
 
   .nav-main{
     border-bottom: 1px solid;
-    padding: var(--base-spacing);
+    padding: 0rem 5rem;
     width: 100%;
     background-color: $nav-background-color;
     height: 40px;
@@ -139,7 +141,7 @@ body, html {
 
   // Secondary menu
   .secondary-nav {
-    padding: var(--base-spacing);
+    padding: 0rem 5rem;
     display: block;
     padding-top: 40px;
     padding-bottom: 70px;
@@ -276,7 +278,7 @@ body, html {
 // ***********************************************************************************************************************
 // Booking
 #booking-block {
-  padding: var(--base-spacing);
+  padding: 0rem 5rem;
   .content {
     //width: 100%;
     //background: rgba(255, 255, 255, 0.888);
@@ -318,6 +320,13 @@ body, html {
       border-top: 4px solid $absa-red;
       background: rgba(255, 255, 255, 0.88);
       overflow: hidden;
+
+      label {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        display: block;
+      }
 
       h2 {
         display: block;
@@ -369,7 +378,8 @@ body, html {
 
 // ***********************************************************************************************************************
 // form
-input{
+input, select {
+  padding: 0 10px;
   border-radius: 4px;
   height: 50px;
   width: 100%;
@@ -380,6 +390,8 @@ input{
   -moz-box-shadow: none;
   box-shadow: none;
 }
+
+
 
 .submit-btn {
   margin:10px;
@@ -432,7 +444,7 @@ input{
     float: $float-left !important;
   }
   #handleNav .nav-main, #booking-block .content .tabcontent{
-    padding: var(--mobile-spacing) !important;
+    padding: 0rem 1rem !important;
   }
 
   #handleNav .secondary-nav {
