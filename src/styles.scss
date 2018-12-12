@@ -391,7 +391,13 @@ input, select {
   box-shadow: none;
 }
 
-
+.save-btn {
+  background-color: $absa-red;
+  font-size: 0.8em;
+  padding: 0 3px;
+  border-radius: 2px;
+  margin: 0 5px;
+}
 
 .submit-btn {
   margin:10px;
