@@ -1,7 +1,7 @@
 // alert("Script running");
 
-$(document).ready(function() {
-  //menuRes();
+$(document).ready(function () {
+  btnActiveState();
 });
 
 function menuRes() {
@@ -14,15 +14,27 @@ function menuRes() {
 }
 
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
+  var i,
+    tabcontent,
+    tablinks;
+
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+function btnActiveState() {
+  $('.flight-type button').click(function (e) {
+    e.preventDefault();
+    $(this).closest('button').addClass('active').siblings().removeClass('active');
+  });
 }

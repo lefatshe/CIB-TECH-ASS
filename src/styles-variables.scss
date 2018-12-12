@@ -5,6 +5,9 @@ html {
   --block-spacing: 1.8rem
 }
 
+$float-left: left;
+$float-right: right;
+
 $enable-flex:               true;
 $enable-grid-classes:       true;
 
@@ -35,6 +38,30 @@ $nav-hover-color: rgba(255, 255, 255, 0.1);
   --webkit-transition: $property $time $type;
   --moz-transition: $property $time $type;
   transition: $property $time $type;
+}
+
+//grid
+%halfColumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+%oneQuarterColumn {
+  width: 15%;
+  padding: 10px;
+}
+
+%quarterColumn {
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+
+%fullColumn {
+  float: left;
+  width: 100%;
 }
 
 //breakpoints
